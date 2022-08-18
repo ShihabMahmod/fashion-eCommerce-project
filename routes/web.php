@@ -10,6 +10,7 @@ use App\Http\Controllers\user\blogControllerForUser;
 use App\Http\Controllers\user\cotactControllerForUser;
 use App\Http\Controllers\admin\dashboardControllerForAdmin;
 use App\Http\Controllers\admin\loginControllerForAdmin;
+use App\Http\Controllers\admin\signupControllerForAdmin;
 
 /*
 |--------------------------------------------------------------------------
@@ -52,3 +53,6 @@ Route::get('/dashboard',[dashboardControllerForAdmin::class,'index']);
 
 //..............loginController..........................
 Route::get('/login',[loginControllerForAdmin::class,'index']);
+
+//................signupController...............
+Route::get('/signup',[signupControllerForAdmin::class,'index']);
