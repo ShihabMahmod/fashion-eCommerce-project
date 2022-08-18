@@ -9,10 +9,10 @@ class admininfo_tbl extends Model
 {
     use HasFactory;
 
-    $protected $admininfo_tbls = 'admininfo_tbls';
-    $public  $timestamp = true;
+    protected $admininfo_tbls = "admininfo_tbls";
+    public  $timestamp = true;
 
-    $protected $fillable = [
+    protected $fillable = [
         "name",
         "email",
         "password"
