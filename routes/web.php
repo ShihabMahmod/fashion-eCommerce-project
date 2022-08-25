@@ -56,3 +56,4 @@ Route::get('/login',[loginControllerForAdmin::class,'index']);
 
 //................signupController...............
 Route::get('/signup',[signupControllerForAdmin::class,'index']);
+Route::post('/saveData',[signupControllerForAdmin::class,'saveData']);

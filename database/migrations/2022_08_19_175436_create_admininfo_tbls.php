@@ -17,8 +17,8 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('email')->unique();
-            $table->integer('admin_id')->random(20)->unique();
-            $table->string('password')->md5();
+            $table->integer('admin_id')->unique();
+            $table->string('password');
             $table->timestamps();
         });
     }
